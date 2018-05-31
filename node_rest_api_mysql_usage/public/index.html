@@ -80,10 +80,8 @@
             
             $.post('http://localhost:3000/v1/users', postData, function(data, status){
                 if(status == "success"){
-                    alert('User created');
-                    localStorage.setItem("token", data.token);
-                }              
-
+                    alert('User created');                    
+                }   
             })
         }
 
